@@ -1,0 +1,178 @@
+@import "_variables";
+@import "../bower_components/bootstrap-sass/vendor/assets/stylesheets/bootstrap";
+@import "../bower_components/backbone-forms/distribution.amd/templates/bootstrap3.css";
+@import "../bower_components/font-awesome/scss/font-awesome.scss";
+@import "../bower_components/bootstrap-datepicker/css/datepicker.css";
+@import "loginview";
+body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+   // color: $gray-light;
+   // background-image: url(../img/pattern-1.png);
+   // background-color: #286da8;
+   // filter: alpha(opacity=50);
+}
+.content{
+  background-color: white;
+  opacity: 0.8;
+}
+.hidden{
+  display: none;
+}
+#app_layout>div>header , #footer{
+  // .btn-link{
+  //   color: white;
+  // }
+  // h1.title{
+  //   color: white;
+  // }
+  background-color: #0f1e79 !important;
+  // color: white;
+  .bar-tab .tab-item{
+    color: lighten(#000, 75%);
+  }
+  .tab-item.active{
+    color: white;
+  }
+}
+#logout{
+  @media (min-width: 768px){
+    margin-right: 10px;
+  }
+}
+#page_content{
+  margin-top: 30px;
+}
+#app_layout{
+  h1.title{
+    // color: $default-color;
+      > img{
+      height: 44px;
+    }
+  }
+    
+  .bar .tab-item .icon{
+    font-size: 32px;
+  }
+  .bar-tab .tab-item .icon{
+    width: 32px;
+    padding-bottom: 35px;
+  }
+  .bar-tab{
+    height: 70px;
+  }
+}
+#background{
+  img{
+    width: 100%;
+    padding: 10%;
+  }
+  position: absolute;
+  z-index: -10;
+  width: 100%;
+  height: 100%;
+}
+#stats{
+  td{
+    padding-right: 3px;
+  }
+}
+#account_view{
+  #account_save{
+    margin-top: 20px;
+  }
+}
+#login_view{
+  h2, h3{
+    text-align: center;
+    font-family: Helvetica;
+  }
+#login_btn{
+    background-color: #FFFFFF;
+    color: #4169E1;
+}  
+}
+.btn-control-panel{
+  .btn{
+    // color: $main-color !important;
+    // height: 170px;
+    width: 100%;
+    margin-top: 10px;
+    padding-top: 20px;
+  }
+  // @media screen and (min-width: $screen-md-min){
+  //   margin-left: 10px;
+  //   .btn{
+  //     height: 360px;
+  //   }
+  // }
+  // @media (max-width: $screen-md-min){
+  //   .btn-groupn{
+  //     height: 170px;
+  //   }
+  // }
+  padding: 0px;
+}
+.form-search{
+  padding: 10px 0px;
+}
+.form_layout{
+  .btn-group{
+    width: 100%;
+    padding: 20px 0px;
+    .btn{
+      width: 100%;
+    }
+  }
+}
+#PatInfoSummary{
+  margin-left: 15px;
+}
+.field-PatNum{
+  @extend .hidden;
+}
+#confirmation_buttons{
+  .btn{
+    width: 100%;
+    margin: 5px 0px;
+  }
+}
+.green-light-text{
+  color: lighten($main-color, 5%);
+}
+
+#thank_you_bg {
+  .backstretch{
+    width: 100%;
+    height: 100%;
+  }
+  // position: absolute;
+  // margin: 0px;
+  width: 100%;
+  height: 100%;
+  // background-image: url('../img/thankyou.jpg')
+}
+.navbar-brand{
+  text-align: center !important;
+  float: none;
+  width: 100%;
+  position: absolute;
+  h4{
+    margin: 4px;
+  }
+  p{
+    font-size: 12px;
+  }
+}
+#PracticeInfo{
+  margin-top: 120px;
+  margin-bottom: 0px;
+  color: darken($blue-light, 40%);
+}
+#control-panel-grid{
+  @media screen and (min-width: $screen-md-min){
+    width: 510px;
+    margin-left: 27%;
+
+  }
+}
